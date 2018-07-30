@@ -1,0 +1,125 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #221F51;
+}
+
+.wrapper{
+    font-size: 1.6em;
+    padding: 2em;
+    margin: 0 auto;
+    width: 600px;
+    background-color: white;
+}
+
+#logo{
+    /* margin-bottom: 15px; */
+    display: inline-block;
+    height: 96px;
+    width: 84px;
+    margin-left:35px; 
+}
+
+.sb-item{
+   
+
+    list-style-type: none;
+    margin-bottom: 0px;
+    display: inline;
+    margin-left: 14px;
+    background: none;
+}
+.sb-icon-list{
+    margin-bottom: 50px;
+    width: 430px;
+    display: inline-block;
+    font-size: .9em;
+}
+
+  .list-span{
+      display: inline-block;
+      padding-left: 0px;
+      padding-top: 8px;
+      font-size: 1.4em;
+  }
+
+
+  #social{
+display: none;
+}
+
+  #big-image{
+      margin-bottom: 50px;
+      width:570px;
+      height: 355px;
+  }
+
+  #newsletter{
+      background: url('../images/social.png') bottom left no-repeat;
+      height: 34px;
+      padding-left: 54px;
+      position: relative;
+      margin-bottom: 50px;
+  }
+
+  #signup-txt{
+      width: 246px;
+      display: inline-block;
+      font-size: .7em;
+      margin-right: 15px;
+      padding-top: 5px;
+  }
+
+  .email-input{
+
+    height: 25px;
+    width: 150px;
+    margin-right: 15px;
+  }
+
+  .button{
+      border:1px solid #999999;
+      border-radius: 42px;
+      font-size: 12px;
+      padding: 5px 10px;
+      text-decoration: none;
+      display: inline-block;
+      text-shadow: 1px 1px 0 rgba(255,255,255,0.3);
+      font-weight: bold;
+      color: #000000;
+      background-color: #FFF;
+      background-image: linear-gradient(to bottom,#FFF,#CFCFCF);
+  }
+
+  .subscribe-span{
+      position: absolute;
+      bottom:10;
+      margin-top: 8px;
+  }
+
+  .article{
+      display: inline-block  ;
+      width: 166px;
+      margin-right: 29px;
+  }
+
+  .art-title{
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+
+  .third-art{
+      margin-right: 0px;
+  }
+
+  .fourth-art{
+    display: none;
+  }
+
+  
