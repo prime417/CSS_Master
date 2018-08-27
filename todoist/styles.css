@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+  @include respond(tab-land) {
+    // width < 1200?
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  }
+
+  @include respond(tab-port) {
+    // width < 900?
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12, 12/16
+  }
+}
+
+header{
+  padding: 0 1rem;
+display: flex;
+height: 4rem;
+text-align: center;
+}
+
+
+.main-nav{
+  list-style-type: none;
+  display: flex;
+}
+.main-nav li{
+  height: 1rem;
+}
+a {
+  text-decoration: none;
+}
+
+h2,
+h3,
+h4 {
+  color: #474747;
+}
+
+.break {
+  display: block;
+}
+
+.text-red {
+  color: #e44232;
+}
+
+.text-invisible {
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  /* background: url(test.png); */
+}
+.btn {
+  display: block;
+  padding: 1rem;
+  width: 14rem;
+  text-align: center;
+  color: #fff;
+  background-color: #e44232;
+  border-radius: 0.2rem;
+}
+article{
+  padding: 2rem 1rem;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #f09a9d; /* Red */
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .sign-up,
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+    width: 50%;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .page {
+    width: 960px;
+    margin: 0 auto;
+  }
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+    width: 33.3%;
+  }
+  .header {
+    height: 400px;
+  }
+  .sign-up {
+    height: 200px;
+    order: 1;
+  }
+  .content {
+    order: 2;
+  }
+}
